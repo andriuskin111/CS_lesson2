@@ -10,6 +10,19 @@ namespace Triju_skaiciu_vidurkis
     {
         static void Main(string[] args)
         {
+            double pirmasSkaicius;
+            double antrasSkaicius;
+            double treciasSkaicius;
+
+            Console.WriteLine("Iveskite pirma skaiciu");
+            pirmasSkaicius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Iveskite pirma skaiciu");
+            antrasSkaicius = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Iveskite pirma skaiciu");
+            treciasSkaicius = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Skaiciu vidurkis yra: " + ((pirmasSkaicius + antrasSkaicius + treciasSkaicius) / 3));
+            Console.ReadLine();
         }
     }
 }
