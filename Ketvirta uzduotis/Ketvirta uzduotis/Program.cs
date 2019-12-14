@@ -15,13 +15,11 @@ namespace Ketvirta_uzduotis
             int studentuSkaicius;
             DateTime kursoPradziosData = new DateTime(2019, 12, 10);
             DateTime kursoPabaigosData = new DateTime(2020, 2, 25);
-            string dienuSkirtumas = (kursoPabaigosData - kursoPradziosData).TotalDays.ToString();
+          
 
-            //(EndDate - StartDate).TotalDays
-
-            //int dienuSkirtumas = 77;
-            //int savaiciuSkaicius = Convert.ToInt32
-            //int dienuSkaiciusBeSavaitgaliu = 44;
+            double dienuSkirtumas = (kursoPabaigosData - kursoPradziosData).TotalDays;
+            double savaiciuSkaicius = dienuSkirtumas / 7;
+            double dienuSkaiciusBeSavaitgaliu = savaiciuSkaicius * 4;
 
             Console.WriteLine("Iveskite mokyklos pavadinima");
             mokyklosPavadinimas = Console.ReadLine();
@@ -37,8 +35,8 @@ namespace Ketvirta_uzduotis
             Console.WriteLine("Kurso pradzios data: " + kursoPradziosData);
             Console.WriteLine("Kurso pabaigos data: " + kursoPabaigosData);
             Console.WriteLine("Dienu skirtumas tarp kuso pradzios ir pabaigos: " + dienuSkirtumas);
-            //Console.WriteLine("Savaiciu skaicius: " + savaiciuSkaicius);
-            Console.WriteLine("");
+            Console.WriteLine("Savaiciu skaicius: " + savaiciuSkaicius);
+            Console.WriteLine("Darbo dienu skaicius: " + dienuSkaiciusBeSavaitgaliu);
             Console.ReadLine();
         }
     }
