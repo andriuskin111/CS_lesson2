@@ -10,6 +10,10 @@ namespace Nd1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Iveskite betkoki skaiciu");
+            string skaicius = Console.ReadLine();
+            Console.WriteLine("{0} {0} {0} {0}", skaicius);
+            Console.ReadLine();
         }
     }
 }
