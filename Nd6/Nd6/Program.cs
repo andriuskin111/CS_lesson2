@@ -10,6 +10,22 @@ namespace Nd6
     {
         static void Main(string[] args)
         {
+            bool eiluteTuscia;
+            Console.WriteLine("Iveskite betkoki teksta");
+            string tekstas = Console.ReadLine();
+
+            if(tekstas != "")
+            {
+                eiluteTuscia = false;
+            }
+            else
+            {
+                eiluteTuscia = true;
+            }
+
+            Console.WriteLine(eiluteTuscia);
+            Console.ReadLine();
+
         }
     }
 }
