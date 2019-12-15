@@ -14,7 +14,7 @@ namespace Nd6
             Console.WriteLine("Iveskite betkoki teksta");
             string tekstas = Console.ReadLine();
 
-            if(tekstas != "")
+            if(tekstas.Length != 0)
             {
                 eiluteTuscia = false;
             }
