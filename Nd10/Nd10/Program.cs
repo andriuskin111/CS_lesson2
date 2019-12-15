@@ -21,9 +21,6 @@ namespace Nd10
             Console.WriteLine("Iveskite pastatymo data (pvz.: 2018/10/10)");
             DateTime ivestiPastatymoMetai = DateTime.Parse(Console.ReadLine());
 
-            double statybosLaikotarpisDienom = (ivestiPastatymoMetai - ivestiStatymoPradziosMetai).TotalDays;
-            double statybosLaikotarpisMetais = statybosLaikotarpisDienom / 365;
-
             RodytiDuomenis(miestoPavadinimas, gatvesPavadinimas, namoNumeris);
 
             Console.ReadLine();
@@ -35,7 +32,7 @@ namespace Nd10
                 Console.WriteLine("Namo Nr: {2}", aMiestoPavadinimas, aGatvesPavadinimas, aNamoNumeris);
                 Console.WriteLine("Statymo pradzios metai: {0}", ivestiStatymoPradziosMetai);
                 Console.WriteLine("Pastatymo metai: {0}", ivestiPastatymoMetai);
-                Console.WriteLine("Statybos laikotarpis: {0}", statybosLaikotarpisMetais);
+                Console.WriteLine("Statybos laikotarpis metais: {0}", (ivestiPastatymoMetai - ivestiStatymoPradziosMetai).TotalDays / 365);
             }
         }
     }
