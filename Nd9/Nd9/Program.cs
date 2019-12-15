@@ -16,7 +16,7 @@ namespace Nd9
             string gatvesPavadinimas = Console.ReadLine();
             Console.WriteLine("Iveskite namo numeri");
             int namoNumeris = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Iveskite pastatymo data (pvz.: 2019/10/10)");
+            Console.WriteLine("Iveskite pastatymo data (pvz.: 2018/10/10)");
             DateTime ivestiPastatymoMetai = DateTime.Parse(Console.ReadLine());
 
             RodytiDuomenis(miestoPavadinimas, gatvesPavadinimas, namoNumeris);
