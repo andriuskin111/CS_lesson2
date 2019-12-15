@@ -32,7 +32,7 @@ namespace Nd10
                 Console.WriteLine("Namo Nr: {2}", aMiestoPavadinimas, aGatvesPavadinimas, aNamoNumeris);
                 Console.WriteLine("Statymo pradzios metai: {0}", ivestiStatymoPradziosMetai);
                 Console.WriteLine("Pastatymo metai: {0}", ivestiPastatymoMetai);
-                Console.WriteLine("Statybos laikotarpis metais: {0}", (ivestiPastatymoMetai - ivestiStatymoPradziosMetai).TotalDays / 365);
+                Console.WriteLine("Statybos laikotarpis metais: {0:0.0}", (ivestiPastatymoMetai - ivestiStatymoPradziosMetai).TotalDays / 365);
             }
         }
     }
