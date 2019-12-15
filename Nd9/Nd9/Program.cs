@@ -15,7 +15,7 @@ namespace Nd9
             Console.WriteLine("Iveskite gatves pavadinima");
             string gatvesPavadinimas = Console.ReadLine();
             Console.WriteLine("Iveskite namo numeri");
-            int namoNumeris = Convert.ToInt32(Console.ReadLine());
+            string namoNumeris = Console.ReadLine();
             Console.WriteLine("Iveskite pastatymo data (pvz.: 2018/10/10)");
             DateTime ivestiPastatymoMetai = DateTime.Parse(Console.ReadLine());
 
@@ -23,7 +23,7 @@ namespace Nd9
 
             Console.ReadLine();
 
-            void RodytiDuomenis(string aMiestoPavadinimas, string aGatvesPavadinimas, int aNamoNumeris)
+            void RodytiDuomenis(string aMiestoPavadinimas, string aGatvesPavadinimas, string aNamoNumeris)
             {
                 Console.WriteLine("Miestas: {0}", aMiestoPavadinimas, aGatvesPavadinimas, aNamoNumeris);
                 Console.WriteLine("Gatve: {1}", aMiestoPavadinimas, aGatvesPavadinimas, aNamoNumeris);
