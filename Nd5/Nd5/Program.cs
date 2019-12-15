@@ -10,6 +10,12 @@ namespace Nd5
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Iveskite staciakampio ilgi");
+            double StaciakampioIlgis = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Iveskite staciakampio ploti");
+            double StaciakampioPlotis = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("staciakampio plotas yra: " + (StaciakampioIlgis * StaciakampioPlotis));
+            Console.ReadLine();
         }
     }
 }
